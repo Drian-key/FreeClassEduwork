@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(250, 250, 250);
+}
+.container{
+    width: 850px;
+    margin: 50px auto;
+}
+.handphone{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.handphone img{
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+}
+.sidebar{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.sidebar .login-form{
+    border: 1px solid rgb(214, 214, 214);
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+input:focus{
+    outline: none;
+}
+input[type="text"]:first-child{
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+input[type="text"], input[type="password"]{
+    width: 80%;
+    padding: 10px 8px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: rgb(250, 250, 250);
+}
+button{
+    width: 85%;
+    border: none;
+    padding: 8px 8px;
+    margin-top: 15px;
+    background-color: rgb(139, 203, 255);
+    border-radius: 5px;
+    color: white;
+}
+button:hover{
+    background-color: rgb(0, 140, 255);
+    transition: .5s;
+}
+.sidebar .login-form .or{
+    width: 85%;
+    height: 20px;
+    margin-top: 16px;
+}
+.sidebar .login-form .or .garis1{
+    background-color: rgb(214, 214, 214);
+    width: 40%;
+    height: 1px;
+    float: left;
+    margin-top: 8px;
+}
+.sidebar .login-form .or p{ 
+    float: left;
+    margin-left: 18px;
+    padding-top: 2px;
+    font-size: 12px;
+    color: rgb(133, 133, 133);
+}
+.sidebar .login-form .or .garis2{
+    background-color: rgb(214, 214, 214);
+    width: 40%;
+    height: 1px;
+    float: right;
+    margin-top: 8px;
+}
+.loginFacebook{
+    margin-top: 20px;
+}
+.loginFacebook p{
+    font-family: sans-serif;
+    display: inline-block;
+    color: rgb(0, 32, 119);
+    font-size: 14px;
+}
+
+.forgot{
+    color: rgb(0, 32, 119);
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 12px;
+    display: block;
+}
+
+.sidebar .createAkun{
+    border: 1px solid rgb(214, 214, 214);
+    background-color: white;
+    margin: -10px 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.sidebar .createAkun p{
+    display: inline-block;
+    font-size: 14px;
+}
+.sidebar .getApp{
+    margin: 10px 20px;
+}
+.sidebar .getApp p{
+    font-size: 14px;
+}
+.sidebar .getApp ul{
+    margin-top: 20px;
+}
+.sidebar .getApp ul li{
+    display: inline;
+}
+.sidebar .getApp ul li img{
+    width: 150px;
+}
+
+@media (max-width:865px){
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .sidebar{
+        width: 400px;
+        margin: 0 auto;
+        float: none;
+    }
+    .container .handphone{
+        display: none;
+    }
+}
