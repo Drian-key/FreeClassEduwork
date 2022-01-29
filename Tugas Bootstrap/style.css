@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+nav .container{
+    padding: 12px 0;
+}
+nav .navbar-toggler:focus{
+    outline: none;
+}
+nav .menu li a{
+    font-weight: bolder;
+    margin-right: 30px;
+    font-size: 14px;
+    opacity: .7;
+}
+nav .menu li:hover a{
+    opacity: 10;
+    transition: .8;
+}
+header .carousel-item img{
+    height: 600px;
+}
+main .container{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+main .container .row{
+    box-sizing: border-box;
+}
+main .container .col{
+    box-sizing: border-box;
+}
+main .container .row .col h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 183, 255);
+}
+main .container .row .col-md-1{
+    color: rgb(0, 183, 255);
+    margin-top: -20px;
+}
+
+@media (max-width:1000px){
+    header .carousel-item img{
+        height: 400px;
+    }
+    main .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    main .container .row .col-md-1{
+        color: rgb(0, 183, 255);
+        margin-top: -20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:600px){
+    header .carousel-item img{
+        height: 250px;
+    }
+    main .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    nav .menu li a{
+        margin-left: 10px;
+    }
+}
